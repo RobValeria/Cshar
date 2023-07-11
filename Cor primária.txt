@@ -1,0 +1,17 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+// Implemente um programa que verifique se uma cor é primária.
+
+
+Console.WriteLine("Qual a cor");
+  string cor = Console.ReadLine(); 
+  string x = cor.ToLower();
+  string a = x.Substring(1,1).ToUpper();
+ string b = x.Substring(x.LastIndexOf("l"),1).ToUpper();
+string d = x.Replace(x.Substring(1,1), a).Replace(x.Substring(x.LastIndexOf("l"),1),b);
+  if (d=="aZuL") {
+    Console.WriteLine("É cor primária? true"); 
+  } else
+    Console.WriteLine("É cor primária? false");

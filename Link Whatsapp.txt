@@ -1,0 +1,17 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+     //Implemente um programa que gere um link para iniciar uma nova conversa pelo whatsap web
+ a partir de um número de celular no formato universal completo
+    
+Console.WriteLine("Por favor me informe o seu número de celular?");
+
+string a = Console.ReadLine();
+
+string b = a.Replace("+","").Replace("(","").Replace(")","").Replace(" ","").Replace("-","");
+
+string c = "https://api.whatsapp.com/send?phone="+b;
+    
+    
+Console.WriteLine(c);

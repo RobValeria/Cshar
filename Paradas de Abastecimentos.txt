@@ -1,0 +1,31 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+ // Implemente um programa que calcule quantas paradas para abastecimento 
+]são necessárias para realizar uma viagem, a partir da capacidade do tanque de 
+combustível(em litros), do consumo do veículo (km/litro) e da distância da viagem(km).
+  
+
+Console.WriteLine("Por favor me informe a capacidade do tanque do seu veículo"); 
+
+double tanque = double.Parse(Console.ReadLine());
+    
+Console.WriteLine("Por favor me informe quantos km/l seu carro faz"); 
+
+double kml = double.Parse(Console.ReadLine());  
+    
+Console.WriteLine("Qual a distancia que você vai fazer"); 
+
+double distancia = double.Parse(Console.ReadLine());
+
+double calc = tanque * kml;
+    
+if (distancia / calc <= 0.9 && distancia / calc <=1.3 )
+    { 
+      Console.WriteLine ("Você precisará fazer 1 parada(s) para abastecer.");
+      }
+    else
+    Console.WriteLine("Você precisará fazer 2 parada(s) para abastecer.");
+
+https://replit.com/@RobsonRodrigue9/Devmonk#main.cs

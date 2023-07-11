@@ -1,0 +1,34 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+  // Implemente um programa que calcule o valor final de
+ uma compra sabendo que é aplicado JUROS COMPOSTOS. 
+O programa deve receber o valor total da compra, a quantidade
+ de parcelas e a taxa de juros mensal em porcentagem.
+  
+
+Console.WriteLine("Por favor me informe o valor de entrada"); 
+
+double valor = double.Parse(Console.ReadLine());
+    
+Console.WriteLine("Por favor me informe em quantas vezes quer fazer"); 
+
+double parcelas = double.Parse(Console.ReadLine()); 
+
+Console.WriteLine("Por favor me informe a taxa de juros mensal"); 
+
+double taxa = double.Parse(Console.ReadLine());
+        
+double r = taxa / 100;
+double x = (1 + r);
+double y = Math.Pow(x, parcelas);
+double z = valor * y;
+double w = Math.Round(z,2);
+double h = w / parcelas;
+double f = Math.Round(h,2);
+
+Console.WriteLine("Sua compra ficará R$ "+w+ " em "+parcelas+"x de R$ "+f+ " por mês.");
+
+https://replit.com/@RobsonRodrigue9/Devmonk#main.cs
+

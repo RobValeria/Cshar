@@ -1,0 +1,34 @@
+PROGRAMAÇÃO
+
+C#     - Mega Sena				
+
+     //Implemente um programa que gere 6 números aleatórios que possam ser usados para realizar um jogo na Mega Sena. Os valores devem variar entre 1 a 60.
+  
+
+Console.WriteLine("Por favor me informe um número");
+
+Random random = new Random();
+
+int a = random.Next(1, 10);
+
+int b = random.Next(10, 16);
+
+int c = random.Next(20, 28);
+
+int d = random.Next(30, 32);
+
+int e = random.Next(45, 48);
+
+int f = random.Next(50, 54);
+    
+Console.WriteLine(a);
+
+Console.WriteLine(b); 
+
+Console.WriteLine(c);
+
+Console.WriteLine(d);
+
+Console.WriteLine(e);
+
+Console.WriteLine(f);

@@ -1,0 +1,27 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+
+     //Implemente um programa que que gere uma senha padrão após um cadastro.
+    Essa senha deverá ser trocada após o primeiro login no sistema
+    // A senha padrão deve seguir as regras:
+     // - Primeira letra do nome;
+     // - Primeira letra do último nome;
+    // - Os três primeiros dígitos do CPF;
+  // - Os dois primeiros dígitos da segunda parte do celular;
+    
+Console.WriteLine("Me informe seu nome por favor?");
+string nome = Console.ReadLine();
+    
+Console.WriteLine("Qual o seu CPF");
+string cpf = Console.ReadLine();
+
+Console.WriteLine("Qual o seu telefone celular?");
+string cel = Console.ReadLine();
+    
+string x = nome.Substring(0,1)+nome.Substring(nome.LastIndexOf(" "),2)+cpf.Substring(0,3)+cel.Substring(6,2);
+
+string y = x.Replace(" ","");
+
+Console.WriteLine("A senha criada: "+y);

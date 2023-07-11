@@ -1,0 +1,37 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+
+     //Implemente um programa que formate pela ABNT uma obra lida por estudante para ser inserida nas referências bibliográficas. O programa deve receber o nome do autor, obra, cidade, editora e ano de lançamento. 
+    // * Nesse caso, serão considerados apenas o primeiro e último nome do autor. 
+  
+
+Console.WriteLine("Por favor me informe o nome do autor"); 
+
+string nome = Console.ReadLine();
+
+string x = nome.Substring(nome.LastIndexOf(" "));
+
+string z = x.ToUpper();
+
+string y = nome.Substring(0, 1);
+       
+Console.WriteLine("Por favor me informe o nome do livro"); 
+
+string livro = Console.ReadLine();  
+
+Console.WriteLine("Por favor me informe a cidade do autor"); 
+
+string cidade = Console.ReadLine();
+
+Console.WriteLine("Por favor me informe o nome da editora");
+
+string editora = Console.ReadLine();
+
+Console.WriteLine("Por favor me informe o ano de lançamento"); 
+
+string ano = Console.ReadLine();
+
+Console.WriteLine(z + ", " +y+ ", "+ livro + ". "+cidade+ ": "+editora+ ", "+ano+"."); 
+

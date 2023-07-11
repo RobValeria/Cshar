@@ -1,0 +1,20 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+     //Implemente um programa em Java que verifique se duas pessoas 
+podem assistir um filme no cinema a partir do nome do filme,
+ classificação e da idade das duas pessoas
+    
+Console.WriteLine("Qual o nome do filme?");
+string filme = Console.ReadLine();
+Console.WriteLine("Qual a classificação do filme?");
+int cl = int.Parse(Console.ReadLine());
+Console.WriteLine("Qual a idade da primeira pessoa?");
+int p1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Qual a idade da segunda pessoa?");
+int p2 = int.Parse(Console.ReadLine());
+if (cl>0 && p1<=17 && p2<=17) {
+Console.WriteLine("Vamos assistir um filme? false");
+} else
+Console.WriteLine("Vamos assistir um filme? true");

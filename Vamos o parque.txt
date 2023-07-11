@@ -1,0 +1,22 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+  // Implemente um programa que verifique se está um
+ tempo apropriado para fazer um piquenique no parque. 
+Sabendo que a temperatura ideal é entre 23 e 30. 
+O programa deve receber a previsão da temperatura do dia.
+  
+
+Console.WriteLine("Por favor me informe a temperatura de hoje"); 
+
+double temp = double.Parse(Console.ReadLine());
+    
+if (temp <=30 && temp >=23)
+{
+Console.WriteLine("Vamos ao parque? true");
+}
+    else
+Console.WriteLine("Vamos ao parque? falso");
+
+https://replit.com/@RobsonRodrigue9/Devmonk#main.cs

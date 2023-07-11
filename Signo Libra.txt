@@ -1,0 +1,28 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+ 
+  // Implemente um programa que verifique se uma pessoa é do signo 
+de Libra a partir do nome de mês e dia de nascimento.
+  
+
+Console.WriteLine("Por favor me informe o mês do seu nascimento?"); 
+
+string mês = Console.ReadLine();
+
+Console.WriteLine("Por favor me informe agora o dia"); 
+
+double dia = double.Parse(Console.ReadLine());
+    
+if ((mês == "setembro" || dia >= 01) && (mês == "outubro" || dia <=23))
+
+{
+Console.WriteLine("É do signo de Libra? true");
+}
+    else
+    {
+Console.WriteLine("É do signo de Libra? falso");
+      }
+
+https://replit.com/@RobsonRodrigue9/Devmonk#main.cs

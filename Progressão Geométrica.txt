@@ -1,0 +1,26 @@
+PROGRAMAÇÃO
+
+C#     - Progressão Geométrica				
+
+
+     //Implemente um programa que descubra o valor de uma progressão geométrica,
+ a partir do valor da primeira posição, a razão e a posição desejada. 
+  
+
+Console.WriteLine("Por favor digite a primeira posição");
+
+double a = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Por favor digite a razão");
+
+double b = double.Parse(Console.ReadLine());
+  
+Console.WriteLine("Por favor digite a posição desejada");
+
+double c = double.Parse(Console.ReadLine());
+
+double d = c-1;
+
+double e = b * (Math.Pow(b, d));
+
+Console.WriteLine("O valor do termo na posição "+c+ " é "+e);

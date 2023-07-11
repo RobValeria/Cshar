@@ -1,0 +1,25 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+
+     // Implemente um programa para verificar se uma senha é forte. 
+Para ser forte ela precisa ter no mínimo 6 caracteres, um número e um caractere especial
+    // caractere especiais: ! @ # $ % & * () _
+  
+
+Console.WriteLine("Por favor me informe uma senha com no mínimo 6 caracteres"); 
+
+string x = Console.ReadLine();
+
+int y = x.Length;
+
+bool z = x.Contains("!")||x.Contains("@")||x.Contains("#")||x.Contains("$")||x.Contains("%")||x.Contains("&")||x.Contains("*")||x.Contains("()")||x.Contains("_");
+
+bool W = x.Contains("0")||x.Contains("1")||x.Contains("2")||x.Contains("3")||x.Contains("4")||x.Contains("5")||x.Contains("6")||x.Contains("7")||x.Contains("8")||x.Contains("9");
+
+if(z==true && y>=6 && W==true){
+  Console.WriteLine(" A senha cumpre os requisitos?true");
+  } else
+    Console.WriteLine("A senha cumpre os requisitos? false");
+  

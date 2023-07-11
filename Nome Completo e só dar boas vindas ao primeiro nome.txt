@@ -1,0 +1,15 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+// Boas Vindas (Primeiro Nome):
+// Implemente um programa para enviar uma mensagem de boas-vindas, pelo primeiro nome, a partir do nome completo do usuário
+// Resposta: Seja bem vindo Bruno.
+
+Console.WriteLine("Por favor me informe seu nome completo?");
+
+string x = Console.ReadLine();
+
+string z = x.Substring(0, x.IndexOf(' '));
+   
+Console.WriteLine("Seja bem vindo "+z);

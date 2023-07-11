@@ -1,0 +1,17 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+// Validação de Senha:
+// Implemente um programa para verificar se uma senha possui um tamanho de 6 caracteres.
+// Resposta: A senha cumpre o requisito de tamanho? True.
+      
+Console.WriteLine("Me informe uma senha de 6 dígitos");
+      
+string x = Console.ReadLine();
+
+int y = x.Length;
+
+bool z = y >= 6;
+      
+Console.WriteLine("A senha cumpre o requisito de tamanho?" +z);

@@ -1,0 +1,22 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+ // Implemente um programa que calcule a hipotenusa a
+ partir do cateto oposto e do cateto adjacente
+  
+
+Console.WriteLine("Por favor me inorme o valor do cateto oposto"); 
+
+double catopo = double.Parse(Console.ReadLine());
+    
+Console.WriteLine("Por favor me informe o valor do cateto adjacente"); 
+
+double catadja = double.Parse(Console.ReadLine());  
+
+double calc = Math.Sqrt(catopo * catopo + catadja  * catadja);
+
+
+Console.WriteLine("A hipotenusa é "+calc+ ".0");
+
+https://replit.com/@RobsonRodrigue9/Devmonk#main.cs

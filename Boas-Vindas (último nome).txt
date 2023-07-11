@@ -1,0 +1,18 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+ 
+     // Implemente um programa para enviar uma mensagem de
+ boas-vindas (último nome) a partit do nome completo do usuário.
+  
+
+Console.WriteLine("Por favor me informe o seu nome completo"); 
+
+string nome = Console.ReadLine();
+
+string x = nome.Substring(nome.LastIndexOf(" "));
+
+Console.WriteLine("Seja bem-vindo"+x); 
+
+

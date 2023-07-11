@@ -1,0 +1,14 @@
+PROGRAMAÇÃO
+
+C#     - Para Texto					
+
+     //Implemente um programa que formate um CPF informado utilizando a mascara ###.###.###-##
+    
+Console.WriteLine("Qual o seu CPF");
+string cpf = Console.ReadLine();
+string a =cpf.Replace(".", "").Replace(" ", "").Replace("-", "");
+
+string b = a.Substring(0,3)+"."+a.Substring(3,3)+"."+a.Substring(6,3)+"-"+a.Substring(9,2);
+
+Console.WriteLine(b);
+
